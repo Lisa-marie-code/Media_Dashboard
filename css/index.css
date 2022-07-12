@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background: #f7f9ff;
+  --hr: #848bab;
+  --header-text: #000;
+  --header-paragraph: #63687d;
+  --toggle-background: #aeb3cb;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* mobile design */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .media_header {
+    height: 235px;
+    background-color: var(--background);
+    border-radius: 0px 0px 20px 20px;
+    padding: 36px 25px 0 25px;
+  }
+  .media_header header h3 {
+    color: var(--header-text);
+  }
+  .media_header header p {
+    border-bottom: 1px solid var(--hr);
+    line-height: 2;
+    color: var(--header-paragraph);
+  }
+  .nav-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .label {
+    background-color: var(--toggle-background);
+    display: flex;
+    width: 50px;
+    height: 26px;
+    padding: 5px;
+    border-radius: 50px;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .fa-moon-o {
+    color: #f1c40f;
+  }
+  .fa-sun-o {
+    color: #f39c12;
+  }
+  .ball {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 50px;
+    background-color: #fff;
+    top: 2px;
+    left: 2px;
+
+  }
+}
