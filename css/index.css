@@ -12,34 +12,29 @@
   --header-paragraph: #63687d;
   --toggle-background: #aeb3cb;
   --light-text: #848bab;
-  --header-darktext:#fff;
-  --background-dark: #1D1F29;
-   --toggle-dark:#6cdbba;
-   --background-media-dark:#20222F;
-   --header-paragraph-dark: #8C98C6;
-  --ball-light:#fff;
-  --ball-dark: #333A55;
+  --header-darktext: #fff;
+  --background-dark: #1d1f29;
+  --toggle-dark: #6cdbba;
+  --background-media-dark: #20222f;
+  --header-paragraph-dark: #8c98c6;
+  --ball-light: #fff;
+  --ball-dark: #333a55;
 
-
-
-    /* linear-gradient(225deg, #40DB82 100%, #388FE7 100%); */
-
+  /* linear-gradient(225deg, #40DB82 100%, #388FE7 100%); */
 }
 
 body {
   font-family: "Inter", sans-serif;
-
 }
-.dark{
-background-color: var(--background-dark);
---toggle-background:var(--toggle-dark);
---background-media:var(--background-media-dark);
---header-lightext:var(--header-darktext);
---header-paragraph:var(--header-paragraph-dark);
---light-text:var(--header-paragraph-dark);
---ball-light:var(--ball-dark);
+.dark {
+  background-color: var(--background-dark);
+  --toggle-background: var(--toggle-dark);
+  --background-media: var(--background-media-dark);
+  --header-lightext: var(--header-darktext);
+  --header-paragraph: var(--header-paragraph-dark);
+  --light-text: var(--header-paragraph-dark);
+  --ball-light: var(--ball-dark);
 }
-
 
 /* mobile design */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -49,7 +44,6 @@ background-color: var(--background-dark);
     background-color: var(--background-media);
     border-radius: 0px 0px 20px 20px;
     padding: 36px 25px 0 25px;
-    
   }
 
   .media_header header h3 {
@@ -65,7 +59,7 @@ background-color: var(--background-dark);
     display: flex;
     justify-content: space-between;
   }
-  .nav-flex p{
+  .nav-flex p {
     color: var(--light-text);
   }
   .label {
@@ -90,7 +84,7 @@ background-color: var(--background-dark);
     width: 22px;
     height: 22px;
     border-radius: 50px;
-    background-color:var(--ball-light);
+    background-color: var(--ball-light);
     top: 2px;
     left: 2px;
   }
@@ -101,5 +95,14 @@ background-color: var(--background-dark);
   .checkbox:checked + .label .ball {
     transform: translate(24px);
   }
-
+  /* followers */
+  .followers_names {
+    display: flex;
+    background-color: #6cdbba;
+    height: 936px;
+    z-index: 2;
+    margin: 0 24px 0 25px;
+    position: absolute;
+    top: 200px;
+  }
 }
