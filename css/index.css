@@ -34,7 +34,7 @@
 body {
   font-family: "Inter", sans-serif;
 }
-.dark {
+.dark-theme {
   background-color: var(--background-dark);
   --toggle-background: var(--toggle-dark);
   --background-media: var(--background-media-dark);
