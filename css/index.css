@@ -27,6 +27,9 @@
   --followers-p: #63687d;
   --arrow-up: #1eb589;
   --arrow-dark: #fff;
+  --green-span:#1eb589;
+  --red-span:#DC414C;
+  
 
   /* linear-gradient(225deg, #40DB82 100%, #388FE7 100%); */
 }
@@ -145,6 +148,10 @@ body {
     background-color: var(--followers-background);
     border-top: 3px solid #1da1f2;
   }
+  .twitter_subscribe #arrow span,
+  .instagram_subscribe #arrow span{
+    color: var(--green-span);
+  }
   .instagram_subscribe {
     top: 670px;
     background-color: var(--followers-background);
@@ -155,22 +162,47 @@ body {
     background-color: var(--followers-background);
     border-top: 3px solid #c4032b;
   }
-
+.youtube_subscribe #arrow span{
+  color: var(--red-span);
+}
   .overview_names {
     z-index: 5;
     margin: 0 24px 0 25px;
     position: absolute;
     top: 1170px;
-    background-color: #94a7b8;
   }
-  .facebook_views .page_views {
-    grid-template-columns: repeat(2,1fr);
-    display: grid;
-  }
-  .facebook_views .arrow_views{
-    grid-template-columns: repeat(2,1fr);
-    display: grid;
-  }
+ 
 
+.facebook,.instagram
+,.twitter,.youtube{
+  display: flex;
+  justify-content: space-between;
+  width: 326px;
+  padding: 20px;
+  background-color:var(--followers-background);
+  border-radius:5px ;
+  margin-top: 20px;
+}
+/* change span colors */
+ .facebook p,.youtube p,h3{
+  color: var(--followers-h1);
+ }
+.instagram p,h3,.twitter p,h3{
+  color: var(--followers-h1);
+}
+.facebook .views span,
+.instagram .views span,
+.instagram .likes span,
+.twitter .views span,
+.twitter .likes span{
+  color: var(--green-span);
+  font-weight: 600;
+}
+.facebook .likes span,
+.youtube .likes span,
+.youtube .views span{
+  color: var(--red-span);
+  font-weight: 600;
+}
 
 }
