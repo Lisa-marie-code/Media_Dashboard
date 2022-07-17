@@ -29,7 +29,7 @@
   --arrow-dark: #fff;
   --green-span:#1eb589;
   --red-span:#DC414C;
-  
+  --container-padding: 20px 150px;
 
   /* linear-gradient(225deg, #40DB82 100%, #388FE7 100%); */
 }
@@ -50,6 +50,106 @@ body {
   --followers-p: var(--followers-p-dark);
   --arrow-up: var(--arrow-dark);
 }
+/* Desktop design */
+.media_header{
+  height:235px;
+  background-color: var(--background-media);
+  display: flex;
+  justify-content: space-between;
+ padding:var(--container-padding);
+}
+.media_header header h3 {
+  color: var(--header-lightext);
+}
+.media_header header p {
+  color: var(--header-paragraph);
+}
+.label {
+  background-color: var(--toggle-background);
+  display: flex;
+  width: 50px;
+  height: 26px;
+  padding: 5px;
+  border-radius: 50px;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+.followers_names{
+  padding:var(--container-padding);
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 5px;
+  position: relative;
+  top: -100px;
+}
+.followers_names h1 {
+  line-height: 1.5;
+  color: var(--followers-h1);
+  font-weight: 600;
+}
+.followers_names p {
+  color: var(--followers-p);
+}
+.followers_names .names {
+  color: var(--followers-p);
+}
+.followers_names #arrow {
+  color: var(--arrow-up);
+  font-weight: 600;
+}
+.followers_names div{
+  width: 250px;
+  height: 216px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.overview_names{
+  padding:var(--container-padding);
+}
+.ball {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50px;
+  background-color: var(--ball-light);
+  top: 2px;
+  left: 2px;
+  cursor: pointer;
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+.checkbox:checked + .label .ball {
+  transform: translate(24px);
+}
+.facebook_subscribe{
+  background-color: var(--followers-background);
+  border-top: 3px solid #178ff5;
+}
+.twitter_subscribe{
+  background-color: var(--followers-background);
+  border-top: 3px solid #1da1f2;
+}
+.instagram_subscribe{
+  background-color: var(--followers-background);
+  border-top: 3px solid #df4896;
+}
+.youtube_subscribe{
+  background-color: var(--followers-background);
+  border-top: 3px solid #c4032b;
+}
+.twitter_subscribe #arrow span,
+.instagram_subscribe #arrow span{
+  color: var(--green-span);
+}
+
+
+
+
 
 /* mobile design */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -59,6 +159,7 @@ body {
     background-color: var(--background-media);
     border-radius: 0px 0px 20px 20px;
     padding: 36px 25px 0 25px;
+    display: block;
   }
 
   .media_header header h3 {
@@ -102,6 +203,7 @@ body {
     background-color: var(--ball-light);
     top: 2px;
     left: 2px;
+    cursor: pointer;
   }
   .checkbox {
     opacity: 0;
@@ -111,6 +213,13 @@ body {
     transform: translate(24px);
   }
   /* followers */
+  .followers_names,
+  .overview_names{
+    padding: 0;
+  }
+  .followers_names{
+    position: static;
+  }
   .followers_names div {
     /* display: flex; */
     z-index: 2;
