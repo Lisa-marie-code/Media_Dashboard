@@ -1,175 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./images/favicon-32x32.png" size ="32x32" type="image/x-icon">
-    <link rel="stylesheet" href="/css/index.css">
-   <link rel="stylesheet" href="/css/bootstrap.min.css">
-   <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      size="32x32"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
     <title>Social Media</title>
-</head>
-<body>
-<div class="media-container">
-
-
-
-    <!-- header -->
-    <div class="media_header">
+  </head>
+  <body>
+    <div class="media-container">
+      <!-- header -->
+      <div class="media_header">
         <header>
-            <h3> Social Media Dashboard</h3>
-            <p>  Total Followers: 23,004</p>
+          <h3>Social Media Dashboard</h3>
+          <p>Total Followers: 23,004</p>
         </header>
-       <nav class="nav-flex">
-         <p>Dark Mode</p>
-           <div class="dark-input">
-            <input type="checkbox" name="checkbox" id="checkbox" class="checkbox" onclick="toggleTheme()">
+        <nav class="nav-flex">
+          <p>Dark Mode</p>
+          <div class="dark-input">
+            <input
+              type="checkbox"
+              name="checkbox"
+              id="checkbox"
+              class="checkbox"
+              onclick="toggleTheme()"
+            />
             <label for="checkbox" class="label">
-                <i class="fa fa-moon-o" aria-hidden="true"></i>
-                <i class="fa fa-sun-o" aria-hidden="true"></i>
-                <div class="ball"></div>
+              <i class="fa fa-moon-o" aria-hidden="true"></i>
+              <i class="fa fa-sun-o" aria-hidden="true"></i>
+              <div class="ball"></div>
             </label>
-           </div>
-       </nav>
-    </div>
+          </div>
+        </nav>
+      </div>
 
-    <!-- Followers -->
-    <div class="followers_names">
+      <!-- Followers -->
+      <div class="followers_names">
         <!-- facebook -->
         <div class="facebook_subscribe">
-          <img src="./images/icon-facebook.svg" alt=""> <span class="names">@nathanf</span>
+          <img src="./images/icon-facebook.svg" alt="" />
+          <span class="names">@nathanf</span>
           <h1>1987</h1>
           <p>Followers</p>
           <section id="arrow">
-            <img src="/images/icon-up.svg" alt="" > <span > 12 Today</span>
+            <img src="/images/icon-up.svg" alt="" /> <span> 12 Today</span>
           </section>
-          
         </div>
 
-         <!-- twitter -->
+        <!-- twitter -->
         <div class="twitter_subscribe">
-            <img src="./images/icon-twitter.svg" alt=""> <span class="names">@nathanf</span>
-            <h1> 1044</h1>
-            <p>Followers</p>
-            <section id="arrow">
-              <img src="/images/icon-up.svg" alt="" > <span > 99 Today</span>
-            </section>
+          <img src="./images/icon-twitter.svg" alt="" />
+          <span class="names">@nathanf</span>
+          <h1>1044</h1>
+          <p>Followers</p>
+          <section id="arrow">
+            <img src="/images/icon-up.svg" alt="" /> <span> 99 Today</span>
+          </section>
         </div>
 
-         <!-- instagram -->
+        <!-- instagram -->
         <div class="instagram_subscribe">
-            <img src="./images/icon-instagram.svg" alt=""> <span class="names"> @realnathanf</span>
-            <h1>  11k</h1>
-            <p>Followers</p>
-            <section id="arrow">
-              <img src="/images/icon-up.svg" alt="" > <span >  1099 Today</span>
-            </section>
+          <img src="./images/icon-instagram.svg" alt="" />
+          <span class="names"> @realnathanf</span>
+          <h1>11k</h1>
+          <p>Followers</p>
+          <section id="arrow">
+            <img src="/images/icon-up.svg" alt="" /> <span> 1099 Today</span>
+          </section>
         </div>
-         <!-- youtube -->
+        <!-- youtube -->
         <div class="youtube_subscribe">
-            <img src="./images/icon-youtube.svg" alt=""> <span class="names"> Nathan F.</span>
-            <h1> 8239</h1>
-            <p> Subscribers</p>
-            <section id="arrow">
-              <img src="/images/icon-down.svg" alt="" > <span > 144 Today</span>
-            </section>
+          <img src="./images/icon-youtube.svg" alt="" />
+          <span class="names"> Nathan F.</span>
+          <h1>8239</h1>
+          <p>Subscribers</p>
+          <section id="arrow">
+            <img src="/images/icon-down.svg" alt="" /> <span> 144 Today</span>
+          </section>
         </div>
-    </div>
+      </div>
 
-    <!-- Overview -->
-    <div class="overview_names">
-        <h3>Overview - Today</h3>
-         <!-- facebook -->
+      <!-- Overview -->
+      <div class="overview_names">
+        <!-- <h2>Overview - Today</h2> -->
+        <!-- facebook -->
         <div class="facebook">
-            <div class="views">
-                <p>Page Views</p> 
-                <img src="/images/icon-facebook.svg" alt="">
-            </div>
-              <div class="views">
-                <h3>87</h3>
-                <img src="/images/icon-up.svg" alt=""><span>3%</span>
-              </div>  
+          <div class="views">
+            <p>Page Views</p>
+            <img src="/images/icon-facebook.svg" alt="" />
+          </div>
+          <div class="views">
+            <h3>87</h3>
+            <img src="/images/icon-up.svg" alt="" /><span>3%</span>
+          </div>
         </div>
         <div class="facebook">
           <div class="likes">
-               <p>Likes</p>
-               <img src="/images/icon-facebook.svg" alt="">
+            <p>Likes</p>
+            <img src="/images/icon-facebook.svg" alt="" />
           </div>
           <div class="likes">
             <h3>52</h3>
-            <img src="/images/icon-down.svg" alt=""><span>2%</span>
+            <img src="/images/icon-down.svg" alt="" /><span>2%</span>
           </div>
         </div>
 
-       <!-- instagram -->
+        <!-- instagram -->
         <div class="instagram">
-            <div class="views">
-                <p>Likes</p> 
-                <img src="/images/icon-instagram.svg" alt="">
-            </div>
-              <div class="views">
-                <h3>5462</h3>
-                <img src="/images/icon-up.svg" alt=""><span>2257%</span>
-              </div>  
+          <div class="views">
+            <p>Likes</p>
+            <img src="/images/icon-instagram.svg" alt="" />
+          </div>
+          <div class="views">
+            <h3>5462</h3>
+            <img src="/images/icon-up.svg" alt="" /><span>2257%</span>
+          </div>
         </div>
         <div class="instagram">
-            <div class="likes">
-                <p>Profile Views</p>
-                <img src="/images/icon-instagram.svg" alt="">
-           </div>
-           <div class="likes">
-             <h3>52k</h3>
-             <img src="/images/icon-up.svg" alt=""><span>1375%</span>
-           </div>
+          <div class="likes">
+            <p>Profile Views</p>
+            <img src="/images/icon-instagram.svg" alt="" />
+          </div>
+          <div class="likes">
+            <h3>52k</h3>
+            <img src="/images/icon-up.svg" alt="" /><span>1375%</span>
+          </div>
         </div>
 
         <!-- twitter -->
         <div class="twitter">
-            <div class="views">
-                <p>Retweets</p> 
-                <img src="/images/icon-twitter.svg" alt="">
-            </div>
-              <div class="views">
-                <h3>117</h3>
-                <img src="/images/icon-up.svg" alt=""><span>303%</span>
-              </div> 
+          <div class="views">
+            <p>Retweets</p>
+            <img src="/images/icon-twitter.svg" alt="" />
+          </div>
+          <div class="views">
+            <h3>117</h3>
+            <img src="/images/icon-up.svg" alt="" /><span>303%</span>
+          </div>
         </div>
         <div class="twitter">
-            <div class="likes">
-                <p>Likes</p>
-                <img src="/images/icon-twitter.svg" alt="">
-           </div>
-           <div class="likes">
-             <h3>507</h3>
-             <img src="/images/icon-up.svg" alt=""><span>553%</span>
-           </div>
+          <div class="likes">
+            <p>Likes</p>
+            <img src="/images/icon-twitter.svg" alt="" />
+          </div>
+          <div class="likes">
+            <h3>507</h3>
+            <img src="/images/icon-up.svg" alt="" /><span>553%</span>
+          </div>
         </div>
 
         <!-- youtube -->
         <div class="youtube">
-            <div class="views">
-                <p>Likes</p> 
-                <img src="/images/icon-youtube.svg" alt="">
-            </div>
-              <div class="views">
-                <h3>107</h3>
-                <img src="/images/icon-down.svg" alt=""><span>19%</span>
-              </div> 
+          <div class="views">
+            <p>Likes</p>
+            <img src="/images/icon-youtube.svg" alt="" />
+          </div>
+          <div class="views">
+            <h3>107</h3>
+            <img src="/images/icon-down.svg" alt="" /><span>19%</span>
+          </div>
         </div>
         <div class="youtube">
-            <div class="likes">
-                <p>Total Views</p>
-                <img src="/images/icon-youtube.svg" alt="">
-           </div>
-           <div class="likes">
-             <h3>1407</h3>
-             <img src="/images/icon-down.svg" alt=""><span>12%</span>
-           </div>
+          <div class="likes">
+            <p>Total Views</p>
+            <img src="/images/icon-youtube.svg" alt="" />
+          </div>
+          <div class="likes">
+            <h3>1407</h3>
+            <img src="/images/icon-down.svg" alt="" /><span>12%</span>
+          </div>
         </div>
+      </div>
     </div>
-
-  </div>
-<script src="/index.js"></script>
-</body>
+    <script src="/index.js"></script>
+  </body>
 </html>
