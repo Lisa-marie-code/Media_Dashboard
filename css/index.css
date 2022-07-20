@@ -126,6 +126,12 @@ body {
   width: 250px;
   background-color: var(--followers-background);
 }
+/* .overview_names div:hover{
+  background-color: var(--light_hover);
+}
+.facebook:hover{
+background-color: var(--light_hover);
+} */
 
  .facebook,.twitter,
  .instagram,.youtube{
